@@ -1,10 +1,10 @@
-name: Fist Workflow
+name: First Workflow
 on: workflow_dispatch
 jobs:
   first-job:
-    runs-on: ubuntu-24.04
+    runs-on: ubuntu-latest
     steps:
-    - name: print getting
-      run: echo "Hello First Workflow"
-    - name: print end
-      run : echo "End of First Workflow"
+      - name: Print greeting
+        run: echo "Hello World!"
+      - name: Print goodbye
+        run: echo "Done - bye!"
