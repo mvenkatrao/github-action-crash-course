@@ -4,6 +4,6 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-     run: |
-    echo "First output"
-    echo "Second output"
+      - run: |
+          echo "First output"
+          echo "Second output"
