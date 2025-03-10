@@ -5,5 +5,5 @@ jobs:
     runs-on: self-hosted
     steps:
       - run: |
-          echo "First output"
+          mkdir hello
           echo "Second output"
