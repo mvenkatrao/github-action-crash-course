@@ -1,9 +1,8 @@
-name: First Workflow
-on: [push,workflow_dispatch]
 jobs:
-  first-job:
-    runs-on: self-hosted
+  example-job:
+    runs-on: ubuntu-latest
     steps:
-      - run: |
-          echo "Hello"
-          echo "Second output"
+      - name: Run a command with arguments
+        run: echo "${{ inputs.message }}"
+        with:
+          message: "Hello from GitHub Actions"
